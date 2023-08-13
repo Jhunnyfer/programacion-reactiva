@@ -32,7 +32,7 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public Mono<Category> updateClient(@PathVariable Integer id, @RequestBody Category category){
+    public Mono<Category> updateCategory(@PathVariable Integer id, @RequestBody Category category){
         return categoryService.update(id, category);
     }
 
